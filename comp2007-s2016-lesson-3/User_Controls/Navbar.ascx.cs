@@ -11,7 +11,15 @@ namespace comp2007_s2016_lesson_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            switch (Page.Title)
+            {
+                case "Home Page":
+                    home.Attributes.Add("class", "active");
+                    break;
+                case "Contact":
+                    contact.Attributes.Add("class", "active");
+                    break;
+            }
         }
     }
 }

@@ -17,8 +17,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li ID="home" runat="server"><a href="/"><i class="fa fa-lg fa-home"></i> Home</a></li>
-                <li ID="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-lg fa-file-text-o"></i> Contact</a></li>
+                <li id="home" runat="server"><a href="/"><i class="fa fa-lg fa-home"></i> Home</a></li>
+                <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-lg fa-file-text-o"></i> Contact</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
