@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace comp2007_s2016_lesson_3
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Navbar : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
