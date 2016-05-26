@@ -13,5 +13,16 @@ namespace comp2007_s2016_lesson_3
         {
 
         }
+
+        protected void Cancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/");
+        }
+
+        protected void Submit_Click(object sender, EventArgs e)
+        {
+            // TODO: Add email processing code
+            Response.Redirect("/");
+        }
     }
 }
