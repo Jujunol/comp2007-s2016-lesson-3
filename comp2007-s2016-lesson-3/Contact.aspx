@@ -18,30 +18,37 @@
             </div>
         </div>
         <div class="col-md-6">
-            <h1>Contact us</h1>
+            <div class="page-header">
+                <h1>Contact Us</h1>
+            </div>
+            <pre>* - indicates a required field</pre>
             <div class="form-group">
-                <label class="control-label" for="Firstname">Firstname</label>
+                <label class="control-label" for="Firstname">Firstname: *</label>
                 <asp:TextBox runat="server" CssClass="form-control" ID="Firstname" placeholder="Firstname" required="true" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="error" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Firstname is required" ControlToValidate="Firstname"></asp:RequiredFieldValidator>
             </div>
             <div class="form-group">
-                <label class="control-label" for="Lastname">Lastname</label>
+                <label class="control-label" for="Lastname">Lastname: *</label>
                 <asp:Textbox runat="server" CssClass="form-control" ID="Lastname" placeholder="Lastname" required="true" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass="error" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Lastname is required" ControlToValidate="Lastname"></asp:RequiredFieldValidator>
             </div>
             <div class="form-group">
-                <label class="control-label" for="Email">Email</label>
+                <label class="control-label" for="Email">Email: *</label>
                 <asp:Textbox runat="server" TextMode="Email" CssClass="form-control" ID="Email" placeholder="Email" required="true" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" CssClass="error" SetFocusOnError="true" Display="Dynamic" ErrorMessage="An email is required" ControlToValidate="Email"></asp:RequiredFieldValidator>
             </div>
             <div class="form-group">
-                <label class="control-label" for="Phone">Phone</label>
+                <label class="control-label" for="Phone">Phone: </label>
                 <asp:Textbox runat="server" TextMode="Phone" CssClass="form-control" ID="Phone" placeholder="Phone #" />
             </div>
             <div class="form-group">
-                <label class="control-label" for="Message">Message</label>
+                <label class="control-label" for="Message">Message: *</label>
                 <asp:Textbox runat="server" TextMode="MultiLine" CssClass="form-control" ID="Message" placeholder="Your Message" required="true" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" CssClass="error" SetFocusOnError="true" Display="Dynamic" ErrorMessage="A message is required" ControlToValidate="Message"></asp:RequiredFieldValidator>
             </div>
             <div class="text-right">
-                <asp:Button runat="server" CssClass="btn btn-lg btn-warning" ID="Cancel" Text="Cancel" OnClick="Cancel_Click" />
-                <asp:Button runat="server" CssClass="btn btn-lg btn-primary" ID="Submit" Text="Send" OnClick="Submit_Click" />
+                <a href="/" class="btn btn-warning">Cancel</a>
+                <asp:Button runat="server" CssClass="btn btn-primary" ID="Submit" Text="Send" OnClick="Submit_Click" />
             </div>
         </div>
     </div>
